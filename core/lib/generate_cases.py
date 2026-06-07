@@ -18,10 +18,13 @@ Salida: tests.md a stdout.
 import sys
 import json
 
-# Forzar UTF-8 en stdout/stderr (Windows usa cp1252 por defecto y rompe acentos/em-dash).
+# Forzar UTF-8 en stdin/stdout/stderr (Windows usa cp1252 por defecto y rompe
+# acentos/em-dash; stdin importa porque esta lib se usa en pipe: read_hu | generate_cases).
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
     sys.stderr.reconfigure(encoding="utf-8")
+if hasattr(sys.stdin, "reconfigure"):
+    sys.stdin.reconfigure(encoding="utf-8")
 
 
 VERBOS = ["Validar", "Verificar", "Comprobar"]
