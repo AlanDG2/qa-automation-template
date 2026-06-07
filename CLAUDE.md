@@ -79,6 +79,10 @@ Skills en `.claude/skills/`, cargan on-demand (solo su `description` se precarga
 | `qa-bug-report` | Reporte de bug estructurado (gating PASS/ENV) | reportás un bug |
 | `qa-continuous-learning` | Ciclo de aprendizaje: qué documentar, cuándo promover a regla | cerrás una automatización |
 | `doc-to-markdown` | PDF→texto UTF-8 antes de leerlo (ahorro de tokens) | vas a leer un `.pdf` |
+| `skill-creator` | Crear una skill nueva, o adaptar una externa (patrón "tomar lo mejor") sin duplicar | aparece una necesidad recurrente que ninguna skill cubre |
+| `skill-doctor` | Linter de calidad de skills: frontmatter, description, punteros, registro | tras crear/adaptar una skill, o al revisar la salud del cerebro |
+
+> **Meta-skills universales** (`skill-creator`, `skill-doctor`): el cerebro sabe extenderse a sí mismo. Un proyecto puede crear sus propias skills o adaptar ideas externas cuando el trabajo real lo pida.
 
 > Las 3 skills que tocan el gestor de tickets (`qa-coverage-validation`, `qa-testcase-auditor`, `qa-bug-report`) llaman a la **interfaz de adaptador** (`adapters/ticket-manager.interface.md`), nunca a un gestor concreto. Con el adaptador `none` (default) funcionan sin gestor.
 
