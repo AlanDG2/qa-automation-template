@@ -1,0 +1,39 @@
+# ─── Dependencias ─────────────────────────────────────────────────────
+node_modules/
+
+# ─── Secretos / config local (NUNCA versionar) ────────────────────────
+.env
+.env.local
+
+# ─── Adaptadores: el client.mjs real (con credenciales) NO se versiona ─
+# Solo se versiona el stub *.example.mjs. Al activar un adaptador se copia
+# a client.mjs y se rellena con llamadas + .env reales → queda ignorado.
+adapters/**/client.mjs
+
+# ─── Claude Code local ────────────────────────────────────────────────
+.claude/*
+!.claude/skills/
+!.claude/skills/**
+!.claude/hooks/
+!.claude/hooks/**
+.claude/settings.local.json
+.claude/settings.json
+
+# ─── Resultados de Playwright ─────────────────────────────────────────
+test-results/
+test-results-*/
+**/test-results-*/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# ─── Cache derivado (skill doc-to-markdown: PDFs convertidos) ──────────
+.cache/
+
+# ─── Auth state persistido para tests ─────────────────────────────────
+**/.auth/
+
+# ─── Logs / temporales ────────────────────────────────────────────────
+*.log
+__pycache__/
+*.pyc

@@ -1,0 +1,17 @@
+{
+  "name": "jira-xray",
+  "description": "Adaptador de EJEMPLO para Jira + Xray Cloud. Es un stub (client.example.mjs) — hay que copiarlo a client.mjs, rellenar las llamadas TODO y poner credenciales en .env antes de usarlo.",
+  "active": false,
+  "dodTicketFile": "dod-ticket.md",
+  "clientStub": "client.example.mjs",
+  "envVars": [
+    "JIRA_BASE_URL",
+    "JIRA_EMAIL",
+    "JIRA_API_TOKEN",
+    "JIRA_PROJECT_KEY",
+    "XRAY_CLIENT_ID",
+    "XRAY_CLIENT_SECRET",
+    "XRAY_BASE_URL"
+  ],
+  "addsCriteria": [6, 7, 8]
+}

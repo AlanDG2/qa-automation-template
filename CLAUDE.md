@@ -68,12 +68,19 @@ Skills en `.claude/skills/`, cargan on-demand (solo su `description` se precarga
 
 | Skill | Qué cubre | Se carga cuando |
 |---|---|---|
+| `qa-hu-intake` | Protocolo de análisis contextual antes de automatizar una HU | recibís una HU nueva |
 | `qa-risk-test-design` | Diseño de casos por riesgo (NIST/ISTQB): cuántos/qué casos | planeás la cobertura de una HU |
 | `qa-mcp-vs-pom` | Decisión: explorar con MCP vs leer POM existente | abordás una pantalla nueva/parcial |
+| `qa-pom-authoring` | Crear/extender POMs (extender-nunca-romper, checklist) | tocás un `pages/*Page.ts` |
+| `qa-spec-conventions` | Las 3 reglas de specs + estructura + auth | escribís/revisás un `.spec.ts` |
+| `qa-troubleshooting` | Algo falló: auto-healing + bloqueo + impedimentos | un test falla / hay un bloqueo |
+| `qa-coverage-validation` | Reporte de cobertura CA→test + veredicto (banner DoD) | auditás cobertura de una HU |
+| `qa-testcase-auditor` | Gate GO/NO-GO de calidad antes de cargar casos | revisás un `tests.md` |
+| `qa-bug-report` | Reporte de bug estructurado (gating PASS/ENV) | reportás un bug |
 | `qa-continuous-learning` | Ciclo de aprendizaje: qué documentar, cuándo promover a regla | cerrás una automatización |
 | `doc-to-markdown` | PDF→texto UTF-8 antes de leerlo (ahorro de tokens) | vas a leer un `.pdf` |
 
-> **Pendientes (próximas tandas):** `qa-hu-intake`, `qa-pom-authoring`, `qa-spec-conventions`, `qa-troubleshooting` (semi-portables, en construcción) y `qa-coverage-validation`, `qa-testcase-auditor`, `qa-bug-report` (tocan el gestor de tickets vía la interfaz de adaptador). Se agregan a esta tabla a medida que se construyen.
+> Las 3 skills que tocan el gestor de tickets (`qa-coverage-validation`, `qa-testcase-auditor`, `qa-bug-report`) llaman a la **interfaz de adaptador** (`adapters/ticket-manager.interface.md`), nunca a un gestor concreto. Con el adaptador `none` (default) funcionan sin gestor.
 
 ---
 
