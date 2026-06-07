@@ -5,7 +5,7 @@ description: Ciclo de aprendizaje acumulativo del proyecto QA — cuándo docume
 
 # Sistema de Aprendizaje Continuo
 
-> **Origen**: extraído de `CLAUDE.md` (§Sistema de Aprendizaje Continuo) el 2026-06-06 durante la modularización del cerebro. Contenido íntegro; solo cambió de carga-siempre a carga-on-demand.
+> Ciclo de aprendizaje acumulativo del proyecto QA. Define qué documentar y cuándo un patrón recurrente se promueve a regla.
 
 Este proyecto implementa un **ciclo de aprendizaje acumulativo** para mejorar la eficiencia con cada HU automatizada.
 

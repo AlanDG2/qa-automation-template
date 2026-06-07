@@ -37,3 +37,7 @@ playwright/.cache/
 *.log
 __pycache__/
 *.pyc
+
+# ─── Output del pipeline (HUs procesadas, tests generados) ────────────
+workspace/
+!workspace/DEMO-1/HU.md

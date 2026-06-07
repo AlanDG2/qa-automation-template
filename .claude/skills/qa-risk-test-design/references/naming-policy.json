@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-06",
+  "updated_at": "template",
   "language": "es",
   "origin": "Convención de nombres de casos de prueba, agnóstica del gestor de tickets. counter_scope = per_HU (la numeración reinicia por Historia de Usuario).",
   "title": {

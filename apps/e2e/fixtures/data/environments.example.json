@@ -1,0 +1,4 @@
+{
+  "qa": { "web": "https://qa.ejemplo.com" },
+  "stable": { "web": "https://stable.ejemplo.com" }
+}

@@ -5,7 +5,7 @@ description: Guía de decisión para elegir entre explorar con MCP Playwright (b
 
 # ¿Cuándo usar MCP vs leer POMs directamente?
 
-> **Origen**: extraído de `CLAUDE.md` (§¿Cuándo usar MCP vs leer POMs directamente?) el 2026-06-06 durante la modularización del cerebro. Contenido íntegro; solo cambió de carga-siempre a carga-on-demand.
+> Guía de decisión: explorar con MCP de navegador vs leer un POM existente, agnóstica del proyecto.
 
 ## Usar MCP Exploration (`mcp__playwright__browser_*`) cuando:
 

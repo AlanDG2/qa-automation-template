@@ -1,0 +1,3 @@
+{
+  "adminQA": { "email": "usuario@ejemplo.com", "password": "<en .env, no aquí>" }
+}

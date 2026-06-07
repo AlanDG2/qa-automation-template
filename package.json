@@ -1,0 +1,16 @@
+{
+  "name": "qa-automation-template",
+  "version": "1.0.0",
+  "description": "Template de QA automation (Playwright + TypeScript), gestor de tickets agnóstico/enchufable.",
+  "private": true,
+  "scripts": {
+    "test:e2e": "playwright test --config apps/e2e/playwright.config.ts",
+    "test:e2e:headed": "playwright test --config apps/e2e/playwright.config.ts --headed",
+    "validate": "node core/validate/validate-control-plane.mjs",
+    "hu:read": "python core/lib/read_hu.py",
+    "hu:cases": "python core/lib/generate_cases.py"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  }
+}

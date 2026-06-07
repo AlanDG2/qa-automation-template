@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "description": "Orden de bootstrap del agente: qué leer primero al arrancar una sesión.",
+  "bootstrapOrder": [
+    "qa-workspace/current-state.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "core/dod/dod-core.md",
+    "docs/lecciones-aprendidas.md"
+  ]
+}
