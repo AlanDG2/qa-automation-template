@@ -6,6 +6,7 @@
   "scripts": {
     "test:e2e": "playwright test --config apps/e2e/playwright.config.ts",
     "test:e2e:headed": "playwright test --config apps/e2e/playwright.config.ts --headed",
+    "test:e2e:ui": "playwright test --config apps/e2e/playwright.config.ts --ui",
     "validate": "node core/validate/validate-control-plane.mjs",
     "hu:read": "python core/lib/read_hu.py",
     "hu:cases": "python core/lib/generate_cases.py"

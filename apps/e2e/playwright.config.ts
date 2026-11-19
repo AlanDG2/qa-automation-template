@@ -6,6 +6,7 @@ export default defineConfig({
   timeout: 120_000,
   expect: { timeout: 15_000 },
   use: {
+    baseURL: process.env.WEB_BASE_URL || 'https://www.saucedemo.com',
     actionTimeout: 15_000,
     navigationTimeout: 30_000,
     trace: 'off',
